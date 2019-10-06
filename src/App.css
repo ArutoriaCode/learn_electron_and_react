@@ -1,22 +1,38 @@
-.App {
-  text-align: center;
+.icon-button {
+  outline: none !important;
+  background: none;
+  border: none;
+  color: inherit;
+  height: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
+.my-input {
+  outline: none;
+  background-color: inherit;
+  width: 240px;
+  height: 24px;
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.no-border {
+  border-radius: 0 !important;
 }
 
-.App-link {
-  color: #09d3ac;
+.left-panel {
+  height: 100vh;
+}
+
+.file-search {
+  border-radius: 40px !important;
+  margin: 10px 10px 0 10px;
+}
+
+.right-panel {
+  height: 100vh;
+}
+
+.button-group {
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
 }

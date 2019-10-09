@@ -45,9 +45,10 @@ const FileList = ({ files, onItemClick, onItemSave, onDelItem }) => {
     <ul className="list-group list-group-flush">
       {
         files.map(file => {
-          return <li className="bg-light list-group-item d-flex flex-row justify-content-between"
+          return <li className="fileList-item bg-light list-group-item d-flex flex-row justify-content-between"
             key={file.id}>
-            <div className="d-flex flex-row justify-content-start align-items-center col-10">
+            <div onClick={() => {onItemClick(file)}}
+              className="d-flex flex-row justify-content-start align-items-center col-10">
               {
                 file.id !== editStatus &&
                 <>

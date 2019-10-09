@@ -1,0 +1,38 @@
+.tab-component {
+  .nav-link {
+    border-radius: 0 !important;
+  }
+  .close-icon {
+    visibility: hidden;
+  }
+  .unsaved-icon {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-color: #d9534f;
+  }
+  .nav-link:hover {
+    .close-icon {
+      visibility: visible;
+    }
+    .unsaved-icon {
+      display: none;
+    }
+  }
+  .nav-link.active {
+    .close-icon {
+      visibility: visible;
+    }
+  }
+  .withUnsaved.nav-link {
+    .close-icon {
+      display: none;
+    }
+    &:hover .close-icon {
+      display: inline-block;
+    }
+    &:hover .unsaved-icon {
+      display: none;
+    }
+  }
+}

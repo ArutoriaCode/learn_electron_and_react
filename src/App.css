@@ -6,6 +6,10 @@
   height: 24px;
 }
 
+.fileList-item {
+  cursor: pointer;
+}
+
 .my-input {
   outline: none;
   background-color: inherit;

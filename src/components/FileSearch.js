@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faTimes } from '@fortawesome/free-solid-svg-icons'
 import PropTypes from 'prop-types'
 
-const FileSeach = ({ title, onFileSearch }) => {
+const FileSeach = ({ title, onFileSearch, onCloseSearch }) => {
   const [inputActive, setInputActive] = useState(false)
   const [value, setValue] = useState('')
   const node = useRef()
@@ -16,6 +16,7 @@ const FileSeach = ({ title, onFileSearch }) => {
     e.preventDefault()
     setInputActive(false)
     setValue('')
+    onCloseSearch()
   }
 
   useEffect(() => {

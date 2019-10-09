@@ -5,8 +5,8 @@ const printer = require('node-native-printer')
 app.on('ready', () => {
 
   const mainWindow = new BrowserWindow({
-    width: 1024,
-    heigth: 680,
+    width: 1320,
+    height: 720,
     webPreferences: {
       nodeIntegration: true
     }
